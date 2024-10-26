@@ -1,0 +1,186 @@
+/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+*{
+    font-family: ubuntu;
+    background-color: #ffffff;
+    margin: 0;
+    outline: none;
+    color: #144314;
+    font-weight: 150;
+    padding: 0;
+}
+
+
+
+header {
+    background-color: #05532d;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    
+}
+
+.center{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+h2,h1, h3 {
+    padding:5px;
+    border-radius: 5px;
+    text-align: center;
+    background:#05532d;
+    color: #c8d9d1;
+}
+
+
+/* Form Styles */
+form {
+    background-color:#ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.data{
+    display: flex;
+    width: 80%-100px;
+}
+ .visit{
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid ;
+    margin: 20px;
+    width:300px;
+   
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    width: 150px;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    flex: 1;
+    outline: none;
+    background-color: #02110700;
+    border: none;
+    border-bottom: 1px solid;
+}
+textarea{
+    resize: none;
+    outline: none;
+    font-family: tahoma;
+    border-radius: 5px;
+}
+
+.gender-group {
+    display: flex;
+    align-items: center;
+}
+
+.gender-group span {
+    width: 150px;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.gender-group input[type="radio"] {
+    margin-right: 5px;
+}
+
+
+
+.click {
+    padding: 5px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    margin:10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.click:hover {
+    background-color: #218838;
+}
+
+/* Footer Styles */
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #05532d;
+    color: white;
+    padding: 20px;
+}
+
+.footer-contact, .footer-social {
+    max-width: 300px;
+}
+
+footer div {
+    
+    margin: 5px 0;
+    background-color: #05532d;
+    color: white;
+
+}
+svg {
+    background-color: #05532d;
+    width: 50px;
+}
+
+/*log in page styles are put here.. they have been created for the page itself only*/
+.login{
+    background-color: #c8e9ee;
+    border: 1px solid #05532d;
+    box-shadow: #22602d77 1px 1px 3px 3px;
+    margin: 10px;
+    border-radius:5px;
+   
+}
+.credentials{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+#pass,#username{
+    border: none;
+    border: #28a745 1px solid;
+    padding: 5px;
+    border-radius: 5px;
+}
+ .user{
+    display:flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     margin: 10px;
+ }

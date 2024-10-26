@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APPROVE REQUEST</title>
+</head>
+<body style="background-color: rgb(8, 56, 8);">
+    <form>
+   <div><!--the whole page-->
+        <div style="height: 50px; margin-top: 0px; border: solid rgb(246, 246, 246) 1px; display: flex; align-items: center;"><!--the top bar-->
+
+            <div style="width: 50px;"><!--The icon-->
+                <img src="icon.jpg" with="50px" height="50px" alt="The Prison icon" style="border-radius: 50%;">
+            </div>
+
+            <div style="width: 100px;"><!--The Text--> 
+                <p style="font-size: 30px; font-weight:bold; font-family: 'Courier New', Courier, monospace; color: white; text-align: center">PIMS</p>
+            </div>
+
+            <div style="width: 1200px;"><!--Visitation text-->
+                <p style="font-size: 30px; font-weight:bold; font-family: 'Courier New', Courier, monospace; color: white; text-align: center;">VISITATION FORM</p>
+            </div>
+
+        </div>
+
+        <div style="display: flex;"><!--Bottom part-->
+
+            <div style="margin-top:0px; border: solid rgb(246, 246, 246) 1px; width:300px; height: 570px;"><!--the left pane-->
+                   
+            </div>
+
+            <div style="margin-top:0px; border: solid rgb(246, 246, 246) 1px; width:1000px; height: 570px; background-color: antiquewhite;"><!--the work area-->
+
+            <div style="display: flex;">
+                
+                    <div style="border: solid rgb(255, 255, 255) 2px; width: 500px; margin-left: 20px; height: 400px; background-color: rgba(0, 204, 255, 0.621); border-radius:10%;"><!--the Vistor's details-->
+                        <form>
+                        <label style="font-size: 30px; font-weight: bold; margin-left:100px">VISITOR'S DETAILS</label><br><br>
+                        <Label for="fullname" >Full name:</Label><input readonly type="text" name="fullname" style="margin-left:40px;" placeholder="MPHATSO MNYENYEMBE"><br><br>
+                        <Label for="Gender" >Gender: </Label> <input style="margin-left:53px;" type="radio" name="gender" id="male">Male <input type="radio" name="gender" id="female">Female<br><br>
+                        <Label for="Relationship" >Relationship:</Label> <input readonly style="margin-left:20px;" type="text" name="relation"  placeholder="Father"><br><br>
+                        <Label for="Phone" >Phone:</Label> <input readonly style="margin-left:60px;" type="text" name="phone"  max="10" placeholder="0885240804"><br><br>
+                        <Label for="Date" >Visit Date:</Label> <input style="margin-left:35px;" type="date" name="Date" min="2024-10-05"><br><br>
+                        <Label for="purpose" >purpose:</Label> <input readonly style="margin-left:48px;" type="text" name="purpose" placeholder="You are stupid!"><br>
+                        </form>
+                    </div>
+        
+                    <div style="border: solid rgb(255, 255, 255) 2px; width: 500px; margin-left: 20px; height: 400px; background-color: rgba(33, 168, 73, 0.626); border-radius:10%;"><!--the inmate details-->
+                        <label style="font-size: 30px; font-weight: bold; margin-left:100px">INMATE'S DETAILS</label><br><br>
+                        <Label for="fullname" >Full name:</Label> <input readonly style="margin-left:20px;" type="text" name="fullname" placeholder="KENNEDY CASHTANDER"><br><br>
+                        <Label for="Relationship" >ID Number:</Label> <input readonly style="margin-left:10px;" type="number" name="identity" placeholder="ETJ639JDG"><br><br>
+                        <Label for="purpose" >Offense:</Label> <input readonly style="margin-left:34px;" type="text" name="offense" placeholder="ILLEGAL SELLING PILLS"><br>                        
+                    </div>
+                    
+                </div>
+                <div style="margin-top: 50px; margin-left: 300px;">
+                    <button type="reset" style="border-radius:30px; background-color: aqua; font-size: 20px; color:white; font-weight: bold;">ACCEPT</button>
+                    <button type="submit" style="border-radius:30px; background-color: rgb(255, 0, 0); font-size: 20px; margin-left: 300px; color:white; font-weight: bold;" onclick="workarea()">DENY</button>
+                    
+                    <!-- The container where the input box will be added -->
+                    <div style="margin-left: 400px;" id="input-container"></div>
+
+                </div>
+            </div>
+        </div>
+   </div>
+</form> 
+
+   <script>
+    
+function workarea() {
+    // Create a new input element
+    var input = document.createElement("input");
+    input.type = "text";
+    input.name = "purpose";
+    input.placeholder = "Enter reason..."; // Optional placeholder
+
+    // Append the input element to the container
+    var container = document.getElementById("input-container");
+    container.appendChild(input);
+
+    // Optionally, add a line break after the input field for better layout
+    container.appendChild(document.createElement("br"));
+
+    // Check if the submit button already exists to avoid adding multiple submit buttons
+    if (!document.getElementById("submit-button")) {
+        // Create the submit button
+        var submitButton = document.createElement("button");
+        submitButton.type = "button";  // Or "submit" if inside a form
+        submitButton.id = "submit-button";
+        submitButton.innerHTML = "Submit";
+        submitButton.style.cssText = "border-radius:30%; background-color: aqua; font-size: 20px;";
+        
+        // Attach an event listener to handle the submission
+        submitButton.onclick = function() {
+            var inputValue = input.value;  // Get the value from the input box
+            alert("Submitted reason: " + inputValue);  // You can replace this with actual submission logic
+        };
+
+        // Append the submit button to the container
+        container.appendChild(submitButton);
+    }
+}
+
+</script>
+</body>
+
+</html>

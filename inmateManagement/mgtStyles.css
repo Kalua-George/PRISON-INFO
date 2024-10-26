@@ -1,0 +1,242 @@
+/* Resetting margins and paddings */
+* {
+    font-size: medium;
+    font-weight: 150;
+    margin: 0;
+    padding: 0;
+    color: #144314;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    font-family: Tahoma, sans-serif; /* Added fallback font */
+    scale: 0.999;
+}
+body{
+    width: 100%;
+}
+
+.add,
+.demo,
+.trans,
+.view {
+    display: none;
+    margin: 20px;
+}
+
+.request {
+    margin: 20px;
+}
+
+header {
+    background: #005112;
+    display: flex;
+}
+
+img {
+    height: 50px;
+}
+
+h1 {
+    font-size: 25px;
+    margin-top: 25px;
+    margin-left: 50px;
+}
+
+h2 {
+    background-color: #005112;
+    text-align: center;
+    width: 80%;
+    border: #012909 1px solid;
+    margin-left: 50px;
+}
+
+/* The main section styles */
+.center {
+    margin-left: -10px;
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+main {
+    height: 100vh -100px;
+    margin-top: 1px;
+    background: #ffffff;
+    display: flex;
+}
+
+a,h1,h2,h3,td{
+    color: #ffffff;
+}
+
+.aside {
+    background: #005112;
+    width: auto;
+    flex: 0 0 200px; /* Fixed width for aside */
+    height: 100vh; /* Full viewport height */
+    padding: 20px;
+    position: sticky; /* Sticky positioning */
+    top: 0; /* Stick to the top of the viewport */
+/* Ensure any overflow content within aside can scroll */
+}
+
+
+nav {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #005112;
+}
+
+a {
+    margin: 20px;
+    padding: 5px;
+    background-color: #012909;
+    border-radius: 5px;
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    display: flex;
+    justify-content: center;
+}
+
+.Emergency,
+.inmateData,
+.pop,
+.view,
+.pop-distr {
+    border: 1px solid #012909;
+    box-shadow: #1443148f 1px 1px 3px 3px;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.Emergency {
+    background-color: #ffffff;
+}
+
+.inmateData {
+    background-color: #ffffff;
+}
+
+.fields {
+    margin: 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.field{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 5px;
+    width: 250px;
+}
+
+input,select {
+    border: none;
+    background: #ffffff;
+    border-bottom: 1px solid #012909;
+    padding: 5px;
+}
+
+input[type="submit"] {
+    color: #ffffff;
+    width: 100px;
+    align-self: center;
+    padding: 5px;
+    background-color: #012909;
+}
+
+input[type="submit"]:hover {
+    scale: 1.1;
+}
+
+/* Population demographics section */
+h3 {
+    background: #005112;
+    align-self: center;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+}
+
+/* Chart canvas styles */
+canvas {
+    height: 200px;
+    width: 200px;
+    border: #012909 solid 1px;
+    margin: 10px;
+}
+
+/* Transfers page styles */
+table {
+    display: flex;
+    justify-content: center;
+    border-collapse: collapse;  
+}
+
+tr {
+    margin: 0 auto;
+    border: 1px solid #012909;
+    padding: 2px; 
+}
+td{
+    padding:5px;
+    border: 1px solid #012909;
+}
+
+thead {
+    background-color: #005112;
+}
+
+
+.trans1 {
+    width: 80%;
+    margin: 0 auto; /* Changed to use proper auto margin */
+}
+/*request to visit*/
+
+/* Request section styles */
+.request {
+     /* Main background */
+    color: white; /* Text color */
+    margin: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #012909; /* Border color */
+    box-shadow: 0 2px 5px #010101; /* Shadow effect */
+}
+
+
+.visitation-text {
+    text-align: center; /* Center visitation text */
+    font-weight: bold; /* Make text bold */
+    margin-top: 5px;
+}
+
+.request-content {
+    display: flex;
+    margin-top: 15px;
+}
+
+
+
+.request-item {
+    background-color: #aab1ac; /* Item background color */
+    border: 1px solid #012909; /* Item border */
+    border-radius: 5px; /* Rounded corners */
+    margin: 1px 0; /* Space between items */
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
