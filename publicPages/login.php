@@ -31,7 +31,7 @@
         </form>
     </div>
 
-    <a href="..\admin\admindashboard.php">ADMIN </a>
+    <a href="https://localhost/PRISON-INFO/PRISON-INFO/admin/admindashboard.php">ADMIN </a>
    </div> 
 </body>
 </html>

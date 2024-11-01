@@ -20,7 +20,7 @@
         </div>
         <div class="links">
             <div class="application">
-                <a href="publicPages\visitapplication.html">APPLY FOR <br> A VISIT</a>
+                <a href="publicPages\visitapplication.php">APPLY FOR <br> A VISIT</a>
             </div>
             <div class="application">
                 <a href="#">APPLICATION FEEDBACK</a>

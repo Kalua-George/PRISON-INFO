@@ -22,7 +22,7 @@ if (isset($_POST['login'])) {
             // Check if the log is successfully inserted
             if (mysqli_query($conn, $storeLog)) {
                 // Redirect only after successful log entrys
-                header('location://localhost//prisoninfomanagement/prison-info-management-system/inmateManagement/inmateMgt.php' );
+                header('location:https://localhost/PRISON-INFO/PRISON-INFO/inmateManagement/inmateMgt.php');
                 exit();  // Ensure script stops after redirection
             } else {
                 echo 'Error storing log in time. Please try again.';  // Logging failed
